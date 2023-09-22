@@ -12,9 +12,9 @@
     </div>
      @foreach($posts as $post)
         <div class="card mb-3">
-            <div class="cord-body">
-                <h2 class="cord-title fs5">{{ $post->title}}</h2>
-                <p class="cord-text">{{ $post->content}}</p>
+            <div class="card-body">
+                <h2 class="card-title fs5">{{ $post->title}}</h2>
+                <p class="card-text">{{ $post->content}}</p>
             <div class="d-flex">
                 <a href="{{ route('posts.show',$post)}}" class="btn btn-outline-primary d-block me-1">詳細</a>
                 <a href="{{ route('posts.edit',$post)}}" class="btn btn-outline-primary d-block me-1">編集</a>
